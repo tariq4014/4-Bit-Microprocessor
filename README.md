@@ -3,13 +3,6 @@
 ## Overview
 This project focuses on designing and implementing a simple microprocessor, often referred to as a "brainless CPU." The development process involves digital logic design, circuit simulation, and Verilog-based implementation. The project is structured into multiple stages, each focusing on different components that contribute to the overall functionality of the microprocessor.
 
-## Project Highlights
-- **Digital Logic Mastery**: Implemented fundamental logic components, including adders, multiplexers, and registers.
-- **Verilog Implementation**: Designed and simulated hardware logic using Verilog.
-- **ROM-based Controller**: Created a finite-state machine (FSM) to control the CPU.
-- **Memory and Instruction Set**: Implemented RAM, ROM, and an instruction set for program execution.
-- **Interactive Debugging**: Utilized GTKWave for waveform analysis and debugging.
-
 ## Project Structure
 ### **1. Laying the Foundation**
 - Built a **4-bit incrementor** for the Program Counter (PC) using half and full adders.
@@ -37,15 +30,6 @@ This project focuses on designing and implementing a simple microprocessor, ofte
   - Fetching opcodes from ROM.
   - Using a control unit to generate appropriate signals.
   - Performing arithmetic/logical operations based on the instruction set.
-
-## Key Components
-### **Hardware Modules**
-- **Arithmetic Logic Unit (ALU)**
-- **Registers and Counters** (Program Counter, Accumulator, Memory Address Register)
-- **Multiplexers and Decoders**
-- **Instruction ROM & Program RAM**
-- **Finite-State Machine Controller**
-- **Memory Address Generator**
 
 ### **Instruction Set**
 - **LOAD ACC**: Loads a value into the accumulator.
@@ -88,30 +72,3 @@ This project focuses on designing and implementing a simple microprocessor, ofte
      vvp microprocessor.exe
      ```
 3. View the simulation results using **GTKWave**.
-
-## File Structure
-```
-/Microprocessor
-│── alu.dig                # Arithmetic Logic Unit design
-│── brainless.dig          # Core CPU without control logic
-│── controller.dig         # ROM-based finite-state machine
-│── four_bit_adder.dig     # 4-bit adder circuit
-│── four_bit_mux.dig       # 4-bit multiplexer
-│── incrementer.dig        # Incrementer for program counter
-│── program_ram.dig        # RAM module
-│── microprocessor.v       # Verilog implementation
-│── micro_top.v            # Top-level Verilog module
-│── micro_stim.v           # Testbench for simulation
-│── ram_vals.hex           # Program memory contents (Hex)
-│── rom_vals.hex           # ROM contents for instruction decoding
-│── README.md              # Project documentation
-```
-
-## Future Enhancements
-- Expanding the **instruction set** for additional operations.
-- Implementing **branching and conditional logic**.
-- Adding support for **more complex programs** in memory.
-
-## Acknowledgments
-This project is inspired by digital design principles and microprocessor architecture concepts. Special thanks to the tools and frameworks that made this project possible.
-

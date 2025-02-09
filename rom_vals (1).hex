@@ -1,0 +1,33 @@
+v2.0 raw
+1205 # LOAD ACC; Load IR
+0234 #	Load ACC
+0000 #	unused
+0000 #	unused
+1205 # ADD ACC; Load IR
+0294 #	ADD
+0000 #	unused
+0000 # 	unused
+1205 # STOP; Load IR
+1000 #	stay here
+0000 #	unused
+0000 #	unused
+1205 #  AND; Load IR
+0214 #      AND
+0000
+0000
+1205 #  ZERO; Load IR
+00D8 #      ZERO
+0000
+0000
+1205 #  SUB; Load IR
+02D4 #      SUB
+0000
+0000
+1205 #  STORE ACC; Load IR
+2304 #      Load value    
+000A #      store it
+0000
+1205 #  Extra Credit; Load IR
+0254 #      a' AND b
+0000
+3FFF
